@@ -32,12 +32,26 @@ function fibonacci(){
     var num = document.getElementById("numinput").value;
     var a=-1,b=1,c=0,i=1;
     while(i<=num){
-        c=a+b;
+        c=a+b; 
         a=b;
         b=c;
         document.write(c +"   ");
         i++;
     }
 }
+function check(){
+    var x=document.getElementById("gender").value;
+    var name=document.getElementById("name").value;
+    if(x == "male"){
+        document.write("You are a Male");
+    }
+    else if(x == "female"){
+        document.write("You are a Female . Hello "+name);
+    }
+    else{
+        document.write("Invalid input");
+    }
+}
+
 
 

@@ -2,14 +2,53 @@
 <html lang="en">
 <head>
     <title>Document</title>
+    <style>
+        body{
+            justify-content: center;
+            margin: 0;
+            background-color: rgb(98, 96, 212);
+        }
+        .container{
+            display: inline-block;
+            margin-left: 600px;
+            margin-top: 150px;
+            border-radius: 10px;
+            background-color: #fff;
+            overflow: hidden;
+            box-shadow: 10px 20px 25px rgba(0,0,0,.8);
+            width: 400px;
+            height: 400px;
+        }
+        .header{
+            text-align: center;
+            padding: 20px 30px;
+            font-size: 30px;
+            font-family: sans-serif;
+            background-color: rgb(214, 203, 203);
+            
+        }
+      #gender{
+        margin-right: 50px;
+        font-family: sans-serif;
+      }
+    </style>
 </head>
+
 <body>
+<div class="container">
+  <div class="header">
+    Details
+</div>
+<div style="margin-left: 50px;">
     <h3>Enter your name </h3>
     <input type="text" id="name"><br><br>
-    <h3>Enter your Gender</h3>
-    <input type="text" id="Gender">
-    
-    
+    <h3>Select your Gender</h3>
+    male <input type="radio" id="gender" name="rad";>
+    female <input type="radio" id="gender" name="rad"><br><br>
+
+    <input type="submit" value="submit" id="" onclick="check()">
+  
+</div>
     <script src="script.js"></script>
 </body>
-</html>
+</html> 
