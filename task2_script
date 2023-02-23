@@ -1,0 +1,35 @@
+var friends = ["Dhana","Selva","Arun","Sharon"];
+function addend() {
+
+    var name = document.getElementById("fname").value;
+    friends.push(name);
+    console.log(friends);
+    document.getElementById("output").innerHTML = friends
+    document.getElementsByName("changes")[0].value = friends;
+
+}
+function addbeg() {
+    var name = document.getElementById("fname").value;
+    friends.splice(0, 0, name);
+    document.getElementsByName("changes")[0].value = friends;
+}
+function dbeg(){
+    var name = document.getElementById("fname").value;
+    friends.splice(0,1);
+    document.getElementsByName("changes")[0].value = friends;
+}
+function dend(){
+    var name = document.getElementById("fname").value;
+    friends.pop();
+    document.getElementsByName("changes")[0].value = friends;
+}
+function sort(){
+    var name=document.getElementById("fname").value;
+    friends.sort();
+    document.getElementsByName("changes")[0].value=friends;
+}
+function comma(){
+    var name=document.getElementById("fname").value;
+    friends.join();
+    document.getElementsByName("changes")[0].value=friends;
+}

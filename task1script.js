@@ -62,5 +62,25 @@ function checkswitch() {
         default: document.write("Invalid input");
     }
 }
+function validate(){
+    // var uname=document.getElementById("uname").value;
+    // var email=document.getElementById("email").value;
+    // var password=document.getElementById("password").value;
+    // var confirm=document.getElementById("password2").value;
+
+    var uname=document.form1.uname.value;
+    var email=document.form1.email.value;
+    var hob=document.form1.hob.value;
+    var number=document.form1.num.value;
+
+    // document.getElementById("print").innerHTML=uname;
+
+    document.write("<h1> Hello "+uname+"</h1>"+"<br>");
+    document.write("Your Email : "+email+"<br>");
+    document.write("Hobbies are : "+hob+"<br>");
+    document.write("Your number : "+number+"<br>");
+   
+ }
+
 
 
