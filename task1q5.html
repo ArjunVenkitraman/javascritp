@@ -9,30 +9,34 @@
     <link rel="stylesheet" href="regstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/regular.min.css">
 </head>
-<body>
+<body> 
     <div class="container">
         <div class="header">
             <h2>Create Account</h2>
         </div>
-        <form class="form" id="form">
+        <form class="form" id="form" name="form1">
             <div class="form-control">
                 <label for="">Username</label>
-                <input type="text" placeholder="name" id="uname">
+                <input type="text" placeholder="name" id="uname" name="uname">
             </div>
             <div class="form-control">
                 <label for="">Email</label>
-                <input type="text" placeholder="ff@gmail.com" id="email">
+                <input type="text" placeholder="ff@gmail.com" id="email" name="email">
             </div>
             <div class="form-control">
                 <label for="">Password</label>
-                <input type="password" placeholder="Password" id="password">
+                <input type="password" placeholder="Password" id="password" name="password">
             </div>
             <div class="form-control">
-                <label for="">Conform Password</label>
-                <input type="password" placeholder="confirm" id="password2">
+                <label for="">Enter telephone number</label>
+                <input type="text" placeholder="number" id="num" name="num">
             </div>
-            <button>SUBMIT</button>
+            <button onclick="validate()">SUBMIT</button>
         </form>
+       
     </div>
+    <!-- <p id="print"></p> -->
+   
+    <script src="regscript.js"></script>
 </body>
 </html>
