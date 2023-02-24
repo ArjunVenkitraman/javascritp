@@ -1,10 +1,8 @@
-var friends = ["Dhana","Selva","Arun","Sharon"];
+var friends = ["Dhana", "Selva", "Arun", "Sharon"];
 function addend() {
 
     var name = document.getElementById("fname").value;
     friends.push(name);
-    console.log(friends);
-    document.getElementById("output").innerHTML = friends
     document.getElementsByName("changes")[0].value = friends;
 
 }
@@ -13,23 +11,62 @@ function addbeg() {
     friends.splice(0, 0, name);
     document.getElementsByName("changes")[0].value = friends;
 }
-function dbeg(){
+function dbeg() {
     var name = document.getElementById("fname").value;
-    friends.splice(0,1);
+    friends.splice(0, 1);
     document.getElementsByName("changes")[0].value = friends;
 }
-function dend(){
+function dend() {
     var name = document.getElementById("fname").value;
     friends.pop();
     document.getElementsByName("changes")[0].value = friends;
 }
-function sort(){
-    var name=document.getElementById("fname").value;
+function sort() {
+    var name = document.getElementById("fname").value;
     friends.sort();
-    document.getElementsByName("changes")[0].value=friends;
+    document.getElementsByName("changes")[0].value = friends;
 }
-function comma(){
-    var name=document.getElementById("fname").value;
+function comma() {
+    var name = document.getElementById("fname").value;
     friends.join();
-    document.getElementsByName("changes")[0].value=friends;
+    document.getElementsByName("changes")[0].value = friends;
 }
+
+function sort() {
+    friends.sort()
+    document.getElementsByName("changes")[0].value = friends;
+
+}
+function forr() {
+    var demo = [];
+    for (var i = 0; i < friends.length; i++) {
+        demo[i] = friends[i];
+    }
+    document.getElementsByName("changes")[0].value = demo;
+}
+function main() {
+    var str = "";
+    friends.forEach(foreach)
+    function foreach(names) {
+        str = str + "  " + names;
+    }
+    document.getElementsByName("changes")[0].value = str;
+}
+
+function forin() {
+    str = "";
+    for (var i in friends) {
+        str = str + "   " + friends[i];
+    }
+    document.getElementsByName("changes")[0].value = str;
+}
+
+function forof() {
+    str = "";
+    for (var i of friends) {
+        str = str + " " + i;
+    }
+    document.getElementsByName("changes")[0].value = str;
+}
+
+
