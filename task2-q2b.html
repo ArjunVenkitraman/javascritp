@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="regstyle.css">
+    <link rel="stylesheet" href="task2_script.js">
+    <title>Details</title>
+    <style>
+        .glow {
+            font-size: 50px;
+            color: #fff;
+            text-align: center;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+            }
+
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-image: url(background.png);">
+    <div class="container">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+
+        <form class="form" id="form" name="form2">
+            <div class="form-control">
+                <label for="">FirstName</label>
+                <input type="text" placeholder="FirstName" id="fname" name="Fname">
+            </div>
+            <div class="form-control">
+                <label for="">LastName</label>
+                <input type="text" placeholder="LastName" id="lname" name="Lname">
+            </div>
+            <div class="form-control">
+                <label for=""> DateOfBirth </label>
+                <input type="date" id="dob" name="Dob">
+            </div>
+            <div class="form-control" style="margin: 0;padding: 0;">
+                <label for="">Select Gender</label><br>
+
+                <label>Female</label>
+                <input style="margin: 0;" type="radio" id="radio" name="radio">
+                <label for="">Male</label>
+                <input type="radio" id="radio" name="radio">
+
+            </div>
+            <h2 id="success" class="glow"></h2>
+            <button type="button" onclick="detail()">SUBMIT</button>
+        </form>
+    </div>
+    <script src="task2_script.js"></script>
+</body>
+
+</html>
