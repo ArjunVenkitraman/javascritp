@@ -150,13 +150,11 @@ function detail() {
         alert("Follow corrrect date of birth format");
     }
 
-    var d1 = new Date(dob);
-    var d2 = new Date();
-   
-    var diff = d2.getTime() - d1.getTime();
 
-    var daydiff = diff / (1000 * 60 * 60 * 24);
-    //document.write(" Total number of days between <b> " + d1 + " </b> and <b> " + d2 + " </b> is: <b> " + daydiff + " days </b>");
+    var d1 = new Date();
+    var year=d1.getFullYear();
+    var user=dob.slice(6);
+    var diff=year-user;
     if(diff>=18){
         document.getElementById("success").innerHTML=fname+" is eligible to vote";
     }
