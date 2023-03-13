@@ -1,0 +1,40 @@
+body {
+    background: linear-gradient(to right, #F2C94C, #F2994A);
+}
+
+.heading {
+    text-align: center;
+    padding: 50px;
+}
+
+.name {
+    float: left;
+    margin-left: 50px;
+}
+
+.birth {
+    padding-left: 100px;
+    float: left;
+    margin-right: 100px;
+}
+
+.mark {
+    width: 300px;
+    margin-left: 100px;
+}
+
+.gender {
+    float: left;
+    margin-right: 100px;
+}
+.contact{
+    float: left;
+    margin-top: 23px;
+    margin-right: 300px;
+    margin-top: 23px;
+    margin-left: 196px;
+}
+.known{
+    float: left;
+    margin-right: 611px;
+}
